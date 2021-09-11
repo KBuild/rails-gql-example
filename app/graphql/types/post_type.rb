@@ -1,5 +1,7 @@
 module Types
   class PostType < Types::BaseObject
+    connection_type_class Types::BaseConnection
+
     field :id, ID, null: false
     field :title, String, null: true
     field :body, String, null: true
